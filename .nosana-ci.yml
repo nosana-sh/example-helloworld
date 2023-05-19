@@ -7,9 +7,7 @@ global:
 
   trigger:
     branch:
-      - main
-      - master
-
+      - "*"
 jobs:
   - name: Create README
     commands:
