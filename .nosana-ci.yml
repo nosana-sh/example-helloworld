@@ -1,10 +1,18 @@
 global:
-  image: alpine:latest
+  image: nosana/solana:latest
 
   trigger:
     branch:
       - "*"
 jobs:
-  - name: Create README
+  - name: install deps
     commands:
-      - echo NOSANA_NODE
+      - npm ci
+    artifacts:
+      - name: node_modules
+
+  - name: list
+    commands:
+      - ls -lah
+    node_modules:
+      - name: node_modules
