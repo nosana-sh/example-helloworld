@@ -1,5 +1,5 @@
 global:
-  image: alpine:latest
+  image: nosana/solana
 
   trigger:
     branch:
