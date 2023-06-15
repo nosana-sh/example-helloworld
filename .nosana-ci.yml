@@ -1,5 +1,5 @@
 global:
-  image: node:lts-alpine
+  image: node
 
   trigger:
     branch:
