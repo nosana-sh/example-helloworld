@@ -1,5 +1,5 @@
 global:
-  image: nosana/solana
+  image: node
 
   trigger:
     branch:
