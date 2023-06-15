@@ -27,7 +27,7 @@ The project comprises of:
 - [Traditional Chinese](README_ZH_TW.md)
 - [Simplified Chinese](README_ZH_CN.md)
 
-## Table of Contents
+## Table of Contents 
 - [Hello world on Solana](#hello-world-on-solana)
   - [Table of Contents](#table-of-contents)
   - [Quick Start](#quick-start)
