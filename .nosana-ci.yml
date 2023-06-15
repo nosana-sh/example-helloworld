@@ -1,5 +1,5 @@
 global:
-  image: alpine
+  image: alpine:latest
 
   trigger:
     branch:
