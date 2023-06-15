@@ -1,5 +1,5 @@
 global:
-  image: nosana/solana:latest
+  image: node:lts-alpine
 
   trigger:
     branch:
