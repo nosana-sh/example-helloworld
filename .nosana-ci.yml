@@ -1,5 +1,5 @@
 global:
-  image: node
+  image: alpine
 
   trigger:
     branch:
@@ -8,12 +8,14 @@ jobs:
   - name: install deps
     commands:
       - env
-      - npm ci
+      - mkdir test
+      - touch test/test.md
+      - echo test > test/test.md
     artifacts:
-      - name: node_modules
+      - name: test
 
   - name: list
     commands:
       - ls -lah
     resources:
-      - name: node_modules
+      - name: test
