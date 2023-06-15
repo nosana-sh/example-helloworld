@@ -7,6 +7,7 @@ global:
 jobs:
   - name: install deps
     commands:
+      - env
       - npm ci
     artifacts:
       - name: node_modules
