@@ -14,5 +14,5 @@ jobs:
   - name: list
     commands:
       - ls -lah
-    node_modules:
+    resources:
       - name: node_modules
