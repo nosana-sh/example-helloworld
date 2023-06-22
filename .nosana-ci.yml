@@ -16,10 +16,10 @@ jobs:
     commands:
       - echo "testing..."
     resources:
-      - name: my-build
+      - my-build
 
   - name: deploy
     commands:
       - echo "deploying..."
     resources:
-      - name: my-build
+      - my-build
