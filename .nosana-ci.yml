@@ -3,7 +3,7 @@ global:
   trigger:
     push:
       branches:
-        - main
+        - "*"
 
 jobs:
   - name: build
