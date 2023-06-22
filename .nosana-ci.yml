@@ -1,21 +1,25 @@
 global:
-  image: alpine:latest
-
+  image: alpine
   trigger:
-    branch:
-      - "*"
-jobs:
-  - name: install deps
-    commands:
-      - env
-      - mkdir test
-      - touch test/test.md
-      - echo test > test/test.md
-    artifacts:
-      - name: test
+    push:
+      branches:
+        - main
 
-  - name: list
+jobs:
+  - name: build
     commands:
-      - ls -lah
+      - echo "building..."
+    artifacts:
+      - name: my-build
+
+  - name: test
+    commands:
+      - echo "testing..."
     resources:
-      - name: test
+      - name: my-build
+
+  - name: deploy
+    commands:
+      - echo "deploying..."
+    resources:
+      - name: my-build
